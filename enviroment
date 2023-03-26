@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="https://bbcgamlng.github.io/home">Home</a></li>
+			<li><a href="https://bbcgamlng.github.io/environment">Ways to Help the Environment</a></li>
+			<li><a href="#">Carbon Footprint</a></li>
+			<li><a href="#">Plants to Add to your Home</a></li>
+		</ul>
+	</nav>
+	<div class="content">
+        <p class="my-font2">Ways to Help the Environment</p>
+		<p class="my-font">
+            Here is a list of some ways we can help the environment:<br><br>
+
+            <b>Reduce, Reuse, and Recycle:</b> We can reduce waste by using reusable bags, water bottles, and containers. We can also recycle items such as paper, plastic, and glass to reduce the amount of waste that ends up in landfills.
+            
+            <br><br><b>Use Energy Efficiently:</b> We can use energy-efficient light bulbs, turn off electronics when not in use, and adjust thermostats to conserve energy. Using renewable energy sources such as solar and wind can also reduce our carbon footprint.
+            
+          <br><br>  <b>Conserve Water:</b> We can conserve water by taking shorter showers, fixing leaks, and using water-efficient appliances.
+            
+          <br><br> <b>Plant Trees:</b> Trees absorb carbon dioxide from the atmosphere and produce oxygen. By planting trees, we can help reduce the amount of carbon in the atmosphere and improve air quality.
+            
+          <br><br> <b>Use Environmentally-Friendly Products:</b> We can use environmentally-friendly cleaning products, personal care products, and pesticides to reduce the amount of harmful chemicals that enter the environment.
+            
+          <br><br> <b>Support Sustainable Agriculture:</b> We can support sustainable agriculture by purchasing organic and locally-grown produce, reducing meat consumption, and avoiding products that use unsustainable farming practices.
+            
+          <br><br><b> Reduce Transportation Emissions:</b> We can reduce transportation emissions by using public transportation, biking, or walking instead of driving alone.
+            
+          <br><br><b>Educate and Advocate:</b> We can educate ourselves and others on environmental issues and advocate for policies that protect the environment.
+            
+          <br><br> By taking these actions, we can all make a <b>positive impact</b> on the environment and help ensure a sustainable future for generations to come.</p>
+	</div>
+	<footer>
+		<p>Made by @John</p>
+	</footer>
+<style>
+    * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+nav {
+	background-color: #333;
+	color: #fff;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+nav li {
+	padding: 0 20px;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+.content {
+	margin-top: 50px;
+	padding: 20px;
+}
+footer {
+	background-color: #333;
+	color: #fff;
+	height: 50px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+footer p {
+	line-height: 50px;
+}
+.my-font {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}.my-font2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150px;
+}
+body{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #62717a;
+}
+</style>
+</body>
+</html>
