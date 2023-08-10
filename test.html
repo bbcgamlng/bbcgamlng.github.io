@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alkon Windows</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font-family: 'Roboto', sans-serif;
+			background-color: #f4f4f4;
+			color: #333;
+		}
+		.top-navbar {
+			background-color: rgba(0, 0, 0, 0.8);
+			color: white;
+			padding: 10px 20px;
+			text-align: right;
+		}
+		.top-navbar a {
+			text-decoration: none;
+			color: #e0e0e0;
+			margin-right: 20px;
+		}
+		.middle-content {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background: url('images/windows.png') no-repeat center center;
+			background-size: contain;
+		}
+		.middle-text {
+			position: absolute;
+			top: 5%;
+			right: 210px;
+			transform: translateY(0%);
+			color: #363535;
+			font-size: 70px;
+			font-weight: bold;
+			font-family: 'Open Sans', sans-serif;
+			text-align: right;
+			animation: slideInRight 1s ease-in-out;
+			font-family: "Copperplate", "Courier New", monospace;
+		}
+		@keyframes slideInRight {
+			from {
+				transform: translateX(100%);
+			}
+			to {
+				transform: translateX(0);
+			}
+		}
+		.content-box {
+			background-color: #fff;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 20px;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			animation: fadeIn 1s ease-in-out;
+		}
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		.content-box h2 {
+			font-size: 32px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+		.content-box p {
+			font-size: 18px;
+			line-height: 1.6;
+			color: #555;
+		}
+		.navbar {
+			background-color: rgba(255, 255, 255, 0.9);
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+			padding: 20px 30px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+		.logo a {
+			font-size: 28px;
+			font-weight: bold;
+			color: #333;
+			margin-right: 10px;
+			text-decoration: none;
+		}
+		.logo img {
+			width: 40px;
+			height: auto;
+		}
+		.nav-links {
+			list-style: none;
+			display: flex;
+			align-items: center;
+			margin-left: auto;
+		}
+		.nav-links li {
+			margin-right: 20px;
+		}
+		.nav-links li:last-child {
+			margin-right: 0;
+		}
+		.nav-links a {
+			text-decoration: none;
+			color: #555;
+			font-weight: bold;
+			transition: color 0.3s;
+			position: relative;
+		}
+		.nav-links a:hover {
+			color: #352c2c;
+		}
+		.nav-links a::before {
+			content: '';
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: #333;
+			transform: scaleX(0);
+			transform-origin: left;
+			transition: transform 0.3s ease;
+		}
+		.nav-links a:hover::before {
+			transform: scaleX(1);
+		}
+	</style>
+</head>
+<body>
+	<nav class="top-navbar">
+		<a href="#">Call Now!   908-543-4333</a>
+	</nav>
+	<nav class="navbar">
+		<div class="logo">
+			<a href="#">Alkon</a>
+			<img src="images/alkon.png" alt="Logo">
+		</div>
+		<ul class="nav-links">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="middle-content">
+		<div class="middle-text">
+			Luxury Windows
+		</div>
+	</div>
+	<div class="content-box">
+		<h2>Our Offer</h2>
+		<p class="animated-text">
+			What does our company do? We design, manufacture and assemble summer and winter gardens as well as roofing. Thus, we provide the joy of year-round contact with nature and we increase the attractiveness and value of real estate.
+		</p>
+		<p class="animated-text">
+			<strong>Winter Gardens</strong><br>
+			Enlarge the space of your home in an exceptionally natural way. Spend cold days in the warm and cozy atmosphere of the winter garden.
+		</p>
+		<p class="animated-text">
+			<strong>Summer Gardens</strong><br>
+			Enjoy the sun from the first moments of spring to the last minutes of autumn. Spend time with your loved ones in the friendly company of Nature.
+		</p>
+		<p class="animated-text">
+			<strong>Canopies</strong><br>
+			Start using all the possibilities offered by the terrace. Let us install a roof that will protect it not only from rain.
+		</p>
+	</div>
+</body>
+</html>
